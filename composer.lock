@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c42a89deaead60646c89e1e9643557b",
-    "content-hash": "93d0290af5b6ec7d49d045d8ab0fcdad",
+    "hash": "586317e1b76aa4e10932923804007559",
+    "content-hash": "29ea39c50395e03f7d806fe87f4f371a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2753,6 +2753,57 @@
                 "test"
             ],
             "time": "2016-01-20 08:20:44"
+        },
+        {
+            "name": "laravel/homestead",
+            "version": "v7.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/homestead.git",
+                "reference": "986f3db020de89c4651d018667ad034301caa738"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/986f3db020de89c4651d018667ad034301caa738",
+                "reference": "986f3db020de89c4651d018667ad034301caa738",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "symfony/console": "~3.3|~4.0",
+                "symfony/process": "~3.3|~4.0",
+                "symfony/yaml": "~3.3|~4.0"
+            },
+            "require-dev": {
+                "phly/changelog-generator": "^2.2",
+                "phpunit/phpunit": "^5.7 || ^6.0"
+            },
+            "bin": [
+                "bin/homestead"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Homestead\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "A virtual machine for web artisans.",
+            "time": "2018-06-24 16:38:19"
         },
         {
             "name": "mockery/mockery",
