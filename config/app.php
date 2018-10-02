@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        sngrl\SphinxSearch\SphinxSearchServiceProvider::class,
 
         /*
          * Application Service Providers...
