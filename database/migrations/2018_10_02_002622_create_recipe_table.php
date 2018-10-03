@@ -20,9 +20,9 @@ class CreateRecipeTable extends Migration
             $table->string('prep_time');
             $table->string('cook_time');
             $table->string('source');
-            $table->foreign('user_id')->references('id')->on('users')
-            $table->foreign('cusine_id')->references('id')->on('cusine')
-            $table->foreign('type_id')->references('id')->on('meal_type')
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('cusine_id')->references('id')->on('cusine');
+            $table->foreign('type_id')->references('id')->on('meal_type');
             $table->timestamps();
         });
     }

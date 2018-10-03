@@ -15,8 +15,8 @@ class CreateNotesTable extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->increments('id');
-            $table->foreign('user_id')->references('id')->on('users')
-            $table->foreign('recipe_id')->references('id')->on('recipe')
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('recipe_id')->references('id')->on('recipe');
             $table->text('content');
             $table->timestamps();
         });

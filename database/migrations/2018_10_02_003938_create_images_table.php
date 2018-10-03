@@ -13,8 +13,10 @@ class CreateImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('images', function (Blueprint $table) {
+        Schema::create('image', function (Blueprint $table) {
             $table->increments('id');
+            $table->foreign('recipe_id')->references('id')->on('recipe');
+            $table->string('uri');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('images');
+        Schema::dropIfExists('image');
     }
 }

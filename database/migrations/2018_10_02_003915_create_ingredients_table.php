@@ -13,12 +13,12 @@ class CreateIngredientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ingredients', function (Blueprint $table) {
+        Schema::create('ingredient', function (Blueprint $table) {
             $table->increments('id');
             $table->foreign('recipe_id')->references('id')->on('recipe');
             $table->string('amount');
             $table->string('unit');
-            $table->string('type');
+            $table->string('name');
             $table->string('prep');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class CreateIngredientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ingredients');
+        Schema::dropIfExists('ingredient');
     }
 }
